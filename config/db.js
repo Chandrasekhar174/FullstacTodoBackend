@@ -1,9 +1,10 @@
 const mysql=require('mysql2');
 const connection=mysql.createConnection({
-    host:'localhost',
+    host:'shortline.proxy.rlwy.net',
     user:'root',
-    password:'Ratnakar@8342',
-    database:'todo_app'
+    port:23854,
+    password:'rVDsJwDEotqkRkWoFVEihpArNXjfIdUK',
+    database:'railway'
 });
 
 connection.connect((err)=>{
@@ -14,5 +15,4 @@ connection.connect((err)=>{
 
     
 });
-
 module.exports=connection;
